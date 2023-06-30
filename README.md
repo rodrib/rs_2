@@ -23,7 +23,7 @@ https://drive.google.com/drive/folders/1-gruxBXBr8AUaDrX72f0UEDtJADOyuvV?usp=sha
 
 1. Clona este repositorio en tu máquina local.
 
-git clone https://github.com/rodrib/recomendation_system1.git
+git clone https://github.com/rodrib/rs_2.git
 
 2. Crea un ambiente virtual en Python.
 
@@ -81,6 +81,18 @@ https://colab.research.google.com/drive/1ocNMGdpKzw3B_17zp0-h_fp8Qhp0qdSN?usp=dr
 RS_Ml
 https://colab.research.google.com/drive/17hwh5wFHxIBw6bY88UrWrmFuadZXv0Dl?usp=drive_link
 
+## Video de la App
+
+https://api-for-movies5.onrender.com/
+
+dataset usado para el Test
+
+df_clean.csv
+https://drive.google.com/file/d/1LfAtDT5jqBhZXjrOdP9uL3__h4Qz3MZC/view?usp=drive_link
+
+df_clean(1).csv
+
+https://drive.google.com/file/d/1T8TvgLygAjsB1zhwRyZ_jEMmQqpdBrB0/view?usp=drive_link
 
 
 ## Contribución
