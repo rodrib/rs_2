@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del Director</title>
+</head>
+<body>
+    <h1>Información del Director</h1>
+    <h2>Nombre del Director: {{ nombre_director }}</h2>
+    <h3>Éxito Total del Director: {{ director_success }}</h3>
+    
+    <h2>Películas del Director:</h2>
+    <ul>
+        {% for film in films_data %}
+        <li>
+            <h3>Título: {{ film.title }}</h3>
+            <p>Fecha de Lanzamiento: {{ film.release_date }}</p>
+            <p>Retorno Individual: {{ film.return }}</p>
+            <p>Costo: {{ film.budget }}</p>
+            <p>Ganancia: {{ film.revenue }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

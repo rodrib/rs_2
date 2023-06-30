@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>API de Películas</title>
+</head>
+<body>
+    <h1>API de Películas</h1>
+    <form action="/cargar_csv" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Cargar CSV">
+    </form>
+    <br>
+
+    <form action="/cantidad_filmaciones_mes" method="get">
+        <label for="mes">Ingrese un mes:</label>
+        <input type="text" id="mes" name="mes">
+        <label for="formato">Formato de respuesta:</label>
+        <select id="formato" name="formato">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        <input type="submit" value="Consultar">
+    </form>
+
+    <form action="/cantidad_filmaciones_dia" method="get">
+        <label for="dia">Ingrese un día:</label>
+        <input type="text" id="dia" name="dia">
+        
+        <label for="formato">Seleccione el formato de respuesta:</label>
+        <select id="formato" name="formato">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        
+        <input type="submit" value="Consultar">
+    </form>
+    
+
+    <form action="/score_titulo" method="get">
+        <label for="titulo">Título de la filmación:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        
+        <label for="format">Formato de respuesta:</label>
+        <select id="format" name="format">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        
+        <input type="submit" value="Obtener Score">
+    </form>
+    
+
+    <form action="/votos_titulo" method="get">
+        <label for="titulo">Título de la filmación:</label>
+        <input type="text" id="titulo" name="titulo">
+        
+        <label for="formato">Seleccione el formato de respuesta:</label>
+        <select id="formato" name="formato">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        
+        <input type="submit" value="Obtener Votos">
+    </form>
+    
+
+
+    <form action="/get_actor" method="get">
+        <label for="nombre_actor">Nombre del actor:</label>
+        <input type="text" id="nombre_actor" name="nombre_actor">
+        
+        <label for="formato">Seleccione el formato de respuesta:</label>
+        <select id="formato" name="formato">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        
+        <input type="submit" value="Obtener Actor">
+    </form>
+    
+
+
+    <form action="/get_director" method="get">
+        <label for="nombre_director">Nombre del director:</label>
+        <input type="text" id="nombre_director" name="nombre_director">
+        
+        <label for="formato">Seleccione el formato de respuesta:</label>
+        <select id="formato" name="formato">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        
+        <input type="submit" value="Obtener Director">
+    </form>
+    
+    <form action="/recommend" method="get">
+        <label for="title">Título de la película:</label>
+        <input type="text" id="title" name="title">
+        
+        <label for="formato">Seleccione el formato de respuesta:</label>
+        <select id="formato" name="formato">
+            <option value="html">HTML</option>
+            <option value="json">JSON</option>
+        </select>
+        
+        <input type="submit" value="Recomendar Películas">
+    </form>
+    
+    
+</body>
+</html>
+
